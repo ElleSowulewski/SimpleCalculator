@@ -1,0 +1,52 @@
+﻿<Window x:Class="SimpleCalculator.Help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleCalculator"
+        mc:Ignorable="d"
+        Title="Help" Height="275" Width="275"
+        Background="LightGray">
+    <Grid
+        Background="DimGray"
+        Margin="10,10,10,10">
+        <StackPanel
+                HorizontalAlignment="Center">
+            <Label
+                Content="Instructions"
+                Margin="10"
+                HorizontalAlignment="Center"
+                FontSize="20"
+                FontWeight="ExtraBold"
+                Foreground="White"/>
+            <TextBlock
+                Text="1) Enter a number for operand 1."
+                Margin="5"
+                TextWrapping="Wrap"
+                Foreground="White"
+                FontWeight="Bold"/>
+            <TextBlock
+                Text="2) Enter a number for operand 2."
+                Margin="5"
+                TextWrapping="Wrap"
+                Foreground="White"
+                FontWeight="Bold"/>
+            <TextBlock
+                Text="3) Click the operator you want to calculate with and see the answer at the bottom."
+                Margin="5"
+                TextWrapping="Wrap"
+                Foreground="White"
+                FontWeight="Bold"/>
+            <Button
+                x:Name="Button_ExitButton"
+                Content="Exit"
+                Width="50" 
+                Height="30"
+                Margin="10"
+                FontWeight="Bold"
+                FontSize="15"
+                Background="LightGray"
+                Click="button_Exit_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
